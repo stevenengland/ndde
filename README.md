@@ -29,3 +29,8 @@ In return, we simply require that you agree:
 8. That if you are an agency of the U.S. Government, (i) Software provided pursuant to a solicitation issued on or after December 1, 1995, is provided with the commercial license rights set forth in this license, and (ii) Software provided pursuant to a solicitation issued prior to December 1, 1995, is provided with “Restricted Rights” as set forth in FAR, 48 C.F.R. 52.227-14 (June 1987) or DFAR, 48 C.F.R. 252.227-7013 (Oct 1988), as applicable.
 9. That your rights under this License end automatically if you breach it in any way.
 10. That all rights not expressly granted to you in this license are reserved.
+
+# Adoptions from original
+* Removed Thread.Sleep from DdeClient.cs that was only used for logging but made the client incredibly slow.
+* Disabled logging (see bullet 1)
+* Changed standard Encoding in DdeContext.cs from ASCII to ANSI
